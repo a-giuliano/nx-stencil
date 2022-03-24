@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "packages/core-components-angular",
+  "sourceRoot": "packages/core-components-angular/src",
+  "prefix": "nx-stencil",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/core-components-angular"],
+      "options": {
+        "jestConfig": "packages/core-components-angular/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/core-components-angular/src/**/*.ts",
+          "packages/core-components-angular/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

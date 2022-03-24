@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-stencil/core-components": ["dist/packages/core-components"],
+      "@nx-stencil/core-components-angular": [
+        "packages/core-components-angular/src/index.ts"
+      ],
+      "@nx-stencil/core-components-react": [
+        "packages/core-components-react/src/index.ts"
+      ],
+      "@nx-stencil/core-components/loader": [
+        "dist/packages/core-components/loader"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

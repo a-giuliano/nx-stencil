@@ -1,0 +1,25 @@
+{
+  "root": "packages/core-components-react",
+  "sourceRoot": "packages/core-components-react/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/core-components-react/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/core-components-react"],
+      "options": {
+        "jestConfig": "packages/core-components-react/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
