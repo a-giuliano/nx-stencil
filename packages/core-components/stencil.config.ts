@@ -37,8 +37,8 @@ export const config: Config = {
 
     angularOutputTarget({
       componentCorePackage: '@nx-stencil/core-components',
-      directivesProxyFile:
-        '../../../packages/core-components-angular/src/generated/directives/proxies.ts',
+      directivesProxyFile: '../../../packages/core-components-angular/src/generated/directives/proxies.ts',
+      directivesArrayFile: '../../../packages/core-components-angular/src/generated/directives/index.ts',
       valueAccessorConfigs: angularValueAccessorBindings,
     }),
   ],
